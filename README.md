@@ -4,5 +4,5 @@
 
 ```
 npm i
-./node_modules/.bin/electron .
+npm run dev
 ```

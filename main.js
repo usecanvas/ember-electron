@@ -12,7 +12,16 @@ app.on('window-all-closed', function onWindowAllClosed() {
 
 app.on('ready', function onReady() {
   mainWindow = new BrowserWindow({ width: 800, height: 600 });
-  mainWindow.loadUrl('file://' + __dirname + '/index.html');
+
+  delete mainWindow.module;
+
+  if (process.env.ELECTRON_ENV === 'development') {
+    mainWindow.openDevTools();
+    mainWindow.loadUrl('http://localhost:5000');
+  } else {
+    mainWindow.openDevTools();
+    mainWindow.loadUrl('file://' + __dirname + '/dist/index.html');
+  }
 
   mainWindow.on('closed', function onClosed() {
     mainWindow = null;
