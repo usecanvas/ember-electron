@@ -19,7 +19,6 @@ app.on('ready', function onReady() {
     mainWindow.openDevTools();
     mainWindow.loadUrl('http://localhost:5000');
   } else {
-    mainWindow.openDevTools();
     mainWindow.loadUrl('file://' + __dirname + '/dist/index.html');
   }
 
