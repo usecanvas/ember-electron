@@ -1,0 +1,8 @@
+{
+  "name": "Hello World",
+  "version": "0.0.0",
+  "devDependencies": {
+    "electron-prebuilt": "^0.26.1"
+  },
+  "main": "main.js"
+}
