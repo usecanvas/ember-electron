@@ -1,10 +1,15 @@
-<h2 id="title">Welcome to Ember.js</h2>
+{{#x-app}}
+  <div class="sidebar">
+    {{traffic-lights}}
+    {{doc-filters}}
+  </div>
 
-<h3>Recent Files</h3>
-<ul>
-  {{#each files as |file|}}
-    <li>{{file}}</li>
-  {{/each}}
-</ul>
+  <div class="main">
+    {{omni-bar}}
 
-{{outlet}}
+    <div class="content">
+      {{doc-list}}
+      {{x-doc}}
+    </div>
+  </div>
+{{/x-app}}
