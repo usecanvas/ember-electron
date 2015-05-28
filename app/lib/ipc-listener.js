@@ -9,7 +9,7 @@ export default Ember.Object.extend({
         payload = JSON.parse(payload);
         callback(payload);
       } catch(err) {
-        console.warn(`Error parsing IPC payload: ${payload}.`)
+        console.warn(`Error parsing IPC payload: ${payload}.`);
       }
     });
   }
