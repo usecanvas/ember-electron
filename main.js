@@ -26,7 +26,14 @@ app.on('window-all-closed', function onWindowAllClosed() {
 });
 
 app.on('ready', function onReady() {
-  mainWindow = new BrowserWindow({ width: 800, height: 600 });
+  const mainWindowOptions = {
+    frame: false,
+    height: 600,
+    resizeable: true,
+    width: 800
+  };
+
+  mainWindow = new BrowserWindow(mainWindowOptions);
 
   var menu = Menu.buildFromTemplate(template);
   Menu.setApplicationMenu(menu);
