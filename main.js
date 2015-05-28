@@ -1,8 +1,23 @@
 'use strict';
 
-var app           = require('app');
 var BrowserWindow = require('browser-window');
+var Menu          = require('menu');
+var app           = require('app');
+var dialog        = require('dialog');
 var mainWindow    = null;
+
+var template = [{
+  label: 'File',
+  submenu: [{
+    label: 'Open',
+    accelerator: 'Command+O',
+    click: function() {
+      dialog.showOpenDialog(mainWindow, {
+        properties: ['openFile', 'multiSelections', 'createDirectory']
+      }, onFileOpen);
+    }
+  }]
+}];
 
 app.on('window-all-closed', function onWindowAllClosed() {
   if (process.platform !== 'darwin') {
@@ -12,6 +27,9 @@ app.on('window-all-closed', function onWindowAllClosed() {
 
 app.on('ready', function onReady() {
   mainWindow = new BrowserWindow({ width: 800, height: 600 });
+
+  var menu = Menu.buildFromTemplate(template);
+  Menu.setApplicationMenu(menu);
 
   delete mainWindow.module;
 
@@ -26,3 +44,9 @@ app.on('ready', function onReady() {
     mainWindow = null;
   });
 });
+
+function onFileOpen(files) {
+  if (files && files.length) {
+      mainWindow.webContents.send('filesOpened', JSON.stringify(files));
+  }
+}
