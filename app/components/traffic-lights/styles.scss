@@ -1,0 +1,23 @@
+& {
+  display: flex;
+  justify-content: space-between;
+  width: 52px;
+}
+
+.light {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.light--red {
+  background-color: #FF6058;
+}
+
+.light--orange {
+  background-color: #FFBD2D;
+}
+
+.light--green {
+  background-color: #29C940;
+}

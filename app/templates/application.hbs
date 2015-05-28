@@ -1,11 +1,17 @@
 {{#x-app}}
   <div class="sidebar">
-    {{traffic-lights}}
+    {{#ns-toolbar}}
+      {{traffic-lights}}
+      {{ns-toolbar-button}}
+    {{/ns-toolbar}}
+
     {{doc-filters}}
   </div>
 
   <div class="main">
-    {{omni-bar}}
+    {{#ns-toolbar class="bordered"}}
+      {{omni-bar}}
+    {{/ns-toolbar}}
 
     <div class="content">
       {{doc-list}}
