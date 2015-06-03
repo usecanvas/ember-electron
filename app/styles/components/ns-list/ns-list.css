@@ -1,0 +1,19 @@
+.ns-list__item {
+  padding: 13px 13px 14px;
+  position: relative;
+}
+
+.ns-list__item:last-child {
+  border-bottom: none;
+}
+
+.ns-list__item:after {
+  background: lightgray; /* TODO: Use variable */
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  width: calc(100% - 13px);
+}

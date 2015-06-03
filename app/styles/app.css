@@ -7,6 +7,7 @@
 @import "components/ns-traffic-lights/ns-traffic-lights.css";
 @import "components/ns-titlebar/ns-titlebar.css";
 @import "components/ns-toolbar/ns-toolbar.css";
+@import "components/ns-list/ns-list.css";
 
 :root {
   --color-background: white;

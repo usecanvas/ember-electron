@@ -22,3 +22,15 @@
 .layout-center-aligned {
   align-items: center;
 }
+
+.layout-relative {
+  position: relative;
+}
+
+.layout-fit {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

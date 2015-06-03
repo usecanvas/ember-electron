@@ -16,4 +16,8 @@ export default Ember.Route.extend({
       this.initializeIPCListener();
     },
   },
+
+  model: function model() {
+    return ['foo', 'bar', 'baz'];
+  }
 });
