@@ -3,7 +3,8 @@
 @import "base.css";
 @import "layout.css";
 
-@import "components/search-bar.css";
+@import "components/search-bar/search-bar.css";
+@import "components/ns-traffic-lights/ns-traffic-lights.css";
 
 :root {
   --color-background: white;
