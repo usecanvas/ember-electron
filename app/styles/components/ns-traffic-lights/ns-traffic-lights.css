@@ -1,5 +1,6 @@
 .ns-traffic-lights {
-  width: 52px;
+  padding: 13px;
+  width: 78px;
 }
 
 .ns-traffic-lights__item {

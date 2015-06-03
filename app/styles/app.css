@@ -5,10 +5,12 @@
 
 @import "components/search-bar/search-bar.css";
 @import "components/ns-traffic-lights/ns-traffic-lights.css";
+@import "components/ns-titlebar/ns-titlebar.css";
 
 :root {
   --color-background: white;
   --color-foreground: black;
+  --color-border: lightgray;
 
   --font-family: 'Helvetica', sans-serif;
 }
