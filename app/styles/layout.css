@@ -18,3 +18,7 @@
 .layout-between-justified {
   justify-content: space-between;
 }
+
+.layout-center-aligned {
+  align-items: center;
+}

@@ -6,11 +6,14 @@
 @import "components/search-bar/search-bar.css";
 @import "components/ns-traffic-lights/ns-traffic-lights.css";
 @import "components/ns-titlebar/ns-titlebar.css";
+@import "components/ns-toolbar/ns-toolbar.css";
 
 :root {
   --color-background: white;
   --color-foreground: black;
   --color-border: lightgray;
+
+  --color-input-background: lightgray;
 
   --font-family: 'Helvetica', sans-serif;
 }

@@ -1,3 +1,4 @@
 .search-bar {
-  background: red;
+  background: var(--color-input-background);
+  width: 100%;
 }
