@@ -1,11 +1,13 @@
-{{#ns-titlebar}}
-  {{ns-traffic-lights}}
+<div class="layout-vertical layout-fit">
+  {{#ns-titlebar}}
+    {{ns-traffic-lights}}
 
-  {{#ns-toolbar}}
-    <section class="ns-toolbar__section layout-flex">
-      <div class="search-bar">Search bar</div>
-    </section>
-  {{/ns-toolbar}}
-{{/ns-titlebar}}
+    {{#ns-toolbar}}
+      <section class="ns-toolbar__section layout-flex">
+        <div class="search-bar">Search bar</div>
+      </section>
+    {{/ns-toolbar}}
+  {{/ns-titlebar}}
 
-{{ns-list content=model classNames="layout-flex"}}
+  {{ns-list content=model classNames="layout-flex"}}
+</div>
