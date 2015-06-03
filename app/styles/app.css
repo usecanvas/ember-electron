@@ -1,8 +1,13 @@
-* {
-  box-sizing: border-box;
-}
+@import "reset.css";
 
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
+@import "base.css";
+@import "layout.css";
+
+@import "components/search-bar.css";
+
+:root {
+  --color-background: white;
+  --color-foreground: black;
+
+  --font-family: 'Helvetica', sans-serif;
 }
