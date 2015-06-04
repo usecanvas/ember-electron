@@ -1,10 +1,13 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div class="layout-vertical layout-fit">
+  {{#ns-title-bar classNames='u-app-region--drag'}}
+    {{ns-traffic-lights}}
 
-<h3>Recent Files</h3>
-<ul>
-  {{#each files as |file|}}
-    <li>{{file}}</li>
-  {{/each}}
-</ul>
+    {{#ns-toolbar}}
+      <section class="ns-toolbar__section layout-flex">
+        {{ns-text-field placeholder='Search Canvases' classNames="u-app-region--no-drag"}}
+      </section>
+    {{/ns-toolbar}}
+  {{/ns-title-bar}}
 
-{{outlet}}
+  {{ns-list content=model classNames="layout-flex"}}
+</div>

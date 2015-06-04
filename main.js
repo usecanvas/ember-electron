@@ -12,7 +12,7 @@ var template = [{
     label: 'Open',
     accelerator: 'Command+O',
     click: function() {
-      dialog.showOpenDialog(mainWindow, {
+      dialog.showOpenDialog({
         properties: ['openFile', 'multiSelections', 'createDirectory']
       }, onFileOpen);
     }
@@ -26,7 +26,14 @@ app.on('window-all-closed', function onWindowAllClosed() {
 });
 
 app.on('ready', function onReady() {
-  mainWindow = new BrowserWindow({ width: 800, height: 600 });
+  const mainWindowConfig = {
+    frame: false,
+    height: 600,
+    resizable: true,
+    width: 800
+  };
+
+  mainWindow = new BrowserWindow(mainWindowConfig);
 
   var menu = Menu.buildFromTemplate(template);
   Menu.setApplicationMenu(menu);

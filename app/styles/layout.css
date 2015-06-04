@@ -1,0 +1,36 @@
+.layout-horizontal,
+.layout-vertical {
+  display: flex;
+}
+
+.layout-horizontal {
+  flex-direction: row;
+}
+
+.layout-vertical {
+  flex-direction: column;
+}
+
+.layout-flex {
+  flex: 1;
+}
+
+.layout-between-justified {
+  justify-content: space-between;
+}
+
+.layout-center-aligned {
+  align-items: center;
+}
+
+.layout-relative {
+  position: relative;
+}
+
+.layout-fit {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

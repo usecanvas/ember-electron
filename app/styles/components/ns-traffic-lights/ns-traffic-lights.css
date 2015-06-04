@@ -1,0 +1,26 @@
+.ns-traffic-lights {
+  padding: 13px;
+  width: 78px;
+}
+
+.ns-traffic-lights__item {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.ns-traffic-lights__item--red {
+  background-color: #FF6058;
+}
+
+.ns-traffic-lights__item--orange {
+  background-color: #FFBD2D;
+}
+
+.ns-traffic-lights__item--green {
+  background-color: #29C940;
+}
+
+.ns-traffic-lights__item--disabled {
+  background-color: #DFDFDF;
+}
