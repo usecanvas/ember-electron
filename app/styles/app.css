@@ -2,6 +2,7 @@
 
 @import "base.css";
 @import "layout.css";
+@import "utilities.css";
 
 @import "components/search-bar/search-bar.css";
 @import "components/ns-traffic-lights/ns-traffic-lights.css";

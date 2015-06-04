@@ -1,10 +1,10 @@
 <div class="layout-vertical layout-fit">
-  {{#ns-titlebar}}
+  {{#ns-titlebar classNames='u-app-region--drag'}}
     {{ns-traffic-lights}}
 
     {{#ns-toolbar}}
       <section class="ns-toolbar__section layout-flex">
-        <div class="search-bar">Search bar</div>
+        {{ns-text-field placeholder='Search Canvases' classNames="u-app-region--no-drag"}}
       </section>
     {{/ns-toolbar}}
   {{/ns-titlebar}}
