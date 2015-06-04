@@ -1,0 +1,14 @@
+.ns-text-field__input {
+  background: var(--color-text-field-background);
+  border-radius: 4px;
+  border: none;
+  font-size: 12px;
+  padding: 4px;
+  width: 100%;
+}
+
+.ns-text-field__input:focus {
+  background: #006DFE; /* TODO: Use var(--color-text-field-background-focus) */
+  color: white; /* TODO: Use variable */
+  outline: 0;
+}

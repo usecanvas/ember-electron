@@ -9,13 +9,18 @@
 @import "components/ns-titlebar/ns-titlebar.css";
 @import "components/ns-toolbar/ns-toolbar.css";
 @import "components/ns-list/ns-list.css";
+@import "components/ns-text-field/ns-text-field.css";
 
 :root {
+  --lightgray: #E7E7E7;
+  --blue: #006DFE;
+
   --color-background: white;
   --color-foreground: black;
-  --color-border: lightgray;
+  --color-border: var(--lightgray);
 
-  --color-input-background: lightgray;
+  --color-text-field-background: var(--lightgray);
+  --color-text-field-background-focus: var(--blue);
 
   --font-family: 'Helvetica', sans-serif;
 }
